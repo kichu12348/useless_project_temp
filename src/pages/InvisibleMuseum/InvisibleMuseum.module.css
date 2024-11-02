@@ -1,0 +1,150 @@
+.container {
+    background-color: #0f172a;
+    min-height: 100vh;
+    color: white;
+    position: relative;
+    padding: 2rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    background: linear-gradient(to right, #a78bfa, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .modalOverlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+  
+  .modal {
+    background-color: #1e293b;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    max-width: 28rem;
+  }
+  
+  .modalHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .alertIcon {
+    color: #facc15;
+  }
+  
+  .modalTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .modalText {
+    margin-bottom: 1rem;
+  }
+  
+  .modalList {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-bottom: 1.5rem;
+  }
+  
+  .modalList li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .modalButton {
+    width: 100%;
+    background-color: #9333ea;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .modalButton:hover {
+    background-color: #7e22ce;
+  }
+  
+  .museum {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    border: 2px solid #334155;
+    border-radius: 0.5rem;
+  }
+  
+  .exhibit {
+    position: absolute;
+    cursor: help;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+  }
+  
+  .exhibit:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .hint {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #94a3b8;
+  }
+  
+  .hint span {
+    font-size: 0.875rem;
+  }
+  
+  .popup {
+    position: absolute;
+    z-index: 10;
+    background-color: #1e293b;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 20rem;
+    transform: translate(-50%, -120%);
+  }
+  
+  .popupTitle {
+    font-weight: bold;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    color: #c084fc;
+  }
+  
+  .popupDescription {
+    font-size: 0.875rem;
+    color: #cbd5e1;
+  }
+  
+  .footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.875rem;
+  }
+  
+  .footer p {
+    margin: 0.25rem 0;
+  }
+

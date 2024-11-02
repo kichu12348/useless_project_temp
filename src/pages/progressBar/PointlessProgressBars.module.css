@@ -1,0 +1,97 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background: linear-gradient(to bottom, #ffffff, #f3f4f6);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: linear-gradient(to bottom, #ffffff, #f3f4f6);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+    margin: 10px;
+  }
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.barContainer {
+  margin-bottom: 2rem;
+}
+
+.barHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.barLabel {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+.progressWrapper {
+  width: 100%;
+  height: 16px;
+  background-color: #f3f4f6;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .progressWrapper {
+    height: 12px;
+  }
+}
+
+.progressBar {
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 300ms ease;
+}
+
+.almostThere {
+  background-color: #4f46e5;
+}
+.twoSteps {
+  background-color: #10b981;
+}
+.reset {
+  background-color: #ec4899;
+}
+.indecisive {
+  background-color: #f59e0b;
+}
+.randomJumps {
+  background-color: #6366f1;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-style: italic;
+  color: #6b7280;
+}

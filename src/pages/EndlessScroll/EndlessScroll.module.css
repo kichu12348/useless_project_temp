@@ -1,0 +1,241 @@
+.container {
+    min-height: 100vh;
+    background: hsl(var(--scroll-hue), 70%, 90%);
+    transition: background-color 0.3s ease;
+    overflow-x: hidden;
+  }
+  
+  /* Custom scrollbar */
+  :global(::-webkit-scrollbar) {
+    width: 20px;
+  }
+  
+  :global(::-webkit-scrollbar-track) {
+    background: linear-gradient(
+      to bottom,
+      hsl(var(--scroll-hue), 70%, 90%),
+      hsl(calc(var(--scroll-hue) + 60deg), 70%, 90%),
+      hsl(calc(var(--scroll-hue) + 120deg), 70%, 90%)
+    );
+  }
+  
+  :global(::-webkit-scrollbar-thumb) {
+    background: #fff;
+    border-radius: 10px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    transition: all 0.3s ease;
+  }
+  
+  :global(::-webkit-scrollbar-thumb:hover) {
+    background: #f0f0f0;
+    background-clip: content-box;
+  }
+  
+  .catContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100vh; /* Ensure there's always room to scroll */
+  }
+  
+  .catHead {
+    position: sticky;
+    top: 50px;
+    width: 200px;
+    height: 180px;
+    background: #808080;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  .ears {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .ear {
+    width: 40px;
+    height: 60px;
+    background: #808080;
+    border-radius: 20px 20px 0 0;
+    margin-top: -30px;
+    position: relative;
+  }
+  
+  .ear:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 30px;
+    background: pink;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .face {
+    position: relative;
+  }
+  
+  .eyes {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+  }
+  
+  .eye {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .eye:after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #000;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: blink 4s infinite;
+  }
+  
+  .nose {
+    width: 20px;
+    height: 15px;
+    background:pink;
+    border-radius: 50%;
+    margin: 10px auto;
+  }
+  
+  .whiskers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .whisker {
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    margin: 2px 10px;
+  }
+  
+  .whisker:nth-child(odd) {
+    transform: rotate(10deg);
+  }
+  
+  .whisker:nth-child(even) {
+    transform: rotate(-10deg);
+  }
+  
+  .catSegment {
+    width: 150px;
+    height: 100px;
+    background: #808080;
+    position: relative;
+    margin-top: -20px;
+  }
+  
+  .bodyPattern {
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(0, 0, 0, 0.1) 10px,
+      rgba(0, 0, 0, 0.1) 20px
+    );
+  }
+  
+  .message {
+    position: absolute;
+    left: 180px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #333;
+    word-wrap: break-word;
+    white-space: nowrap;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    animation: float 3s infinite ease-in-out;
+  }
+  
+  @keyframes blink {
+    0%, 96%, 98% {
+      transform: scale(1);
+    }
+    97% {
+      transform: scale(1, 0.1);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(-50%) translateX(0);
+    }
+    50% {
+      transform: translateY(-50%) translateX(10px);
+    }
+  }
+  
+  /* Make cat segments appear with a fade effect */
+  .catSegment {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .catHead {
+      width: 150px;
+      height: 135px;
+      align-self: flex-start;
+      position: relative;
+    }
+
+    
+    .catSegment {
+      width: 120px;
+      height: 80px;
+      align-self: flex-start;
+      margin-left: 14px;
+    }
+
+    .whiskers{
+        padding: 5px;
+        position: absolute;
+        top: 60%;
+    }
+    
+    .message {
+      left: 140px;
+      font-size: 14px;
+      padding: 8px 16px;
+      white-space: normal;
+      min-width: 200px;
+    }
+  }

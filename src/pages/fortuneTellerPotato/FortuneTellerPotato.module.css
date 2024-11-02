@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    color: #333;
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #444;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  }
+  
+  .potato {
+    font-size: 9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 2rem 0;
+    user-select: none;
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.1));
+  }
+  
+  .potato:hover {
+    transform: translateY(-10px) rotate(5deg);
+    filter: drop-shadow(4px 8px 12px rgba(0,0,0,0.15));
+  }
+  
+  .shake {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+  }
+  
+  .fortune {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    max-width: 600px;
+    text-align: center;
+    font-size: 1.3rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    color: #555;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid #eee;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .fortune:hover {
+    transform: translateY(-3px);
+  }
+  
+  .instruction {
+    font-size: 1.1rem;
+    color: #888;
+    margin-top: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  @keyframes shake {
+    10%, 90% { transform: translate3d(-1px, 0, 0) rotate(-2deg); }
+    20%, 80% { transform: translate3d(2px, 0, 0) rotate(2deg); }
+    30%, 50%, 70% { transform: translate3d(-2px, 0, 0) rotate(-2deg); }
+    40%, 60% { transform: translate3d(2px, 0, 0) rotate(2deg); }
+  }
+  
+  @keyframes floatIn {
+    from { 
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

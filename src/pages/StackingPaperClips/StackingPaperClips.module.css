@@ -1,0 +1,123 @@
+/* StackingPaperClips.module.css */
+.container {
+    min-height: 100vh;
+    padding: 2rem;
+    background: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .scoreBoard {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+    color: #34495e;
+  }
+  
+  .gameArea {
+    width: 800px;
+    height: 600px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .base {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background: #3498db;
+  }
+  
+  .paperclip {
+    position: absolute;
+    width: 50px;
+    height: 15px;
+    background: #95a5a6;
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+    animation: wobble 2s ease-in-out infinite;
+  }
+  
+  .paperclip::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    width: 40px;
+    height: 25px;
+    border: 3px solid #95a5a6;
+    border-radius: 40%;
+    border-bottom: none;
+  }
+  
+  .gameOver {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  }
+  
+  .gameOver button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background: #3498db;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .gameOver button:hover {
+    transform: translateY(-2px);
+    background: #2980b9;
+  }
+  
+  .instructions {
+    margin-top: 1rem;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+  }
+  
+  @keyframes wobble {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(0.5deg); }
+    75% { transform: rotate(-0.5deg); }
+  }
+  
+  @media (max-width: 850px) {
+    .gameArea {
+      width: 95vw;
+      height: 70vh;
+    }
+    
+    .title {
+      font-size: 2rem;
+    }
+    
+    .scoreBoard {
+      font-size: 1.2rem;
+    }
+  }

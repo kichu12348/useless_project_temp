@@ -69,9 +69,8 @@ npm start
 
 ## Project Demo
 
-### Video
-
-- [Demo Video Link](#) An overview of Bananas showcasing each pointless feature.
+**Link**
+- [Demo Link](https://kichu12348.github.io/baananaa) An overview of Bananas showcasing each pointless feature.
 
 ### Additional Demos
 

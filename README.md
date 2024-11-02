@@ -80,9 +80,9 @@ npm start
 
 ## Team Contributions
 
--[Neil Oommen Renni:] Lead development, component structuring, implemented Endless Scroll and Rate My Air features.
-- [Mahadevan Reji:] Created Pointless Progress Bars and Philosophical Cat components, assisted with styling.
-- [Malavika GK:]Designed History of Invisible Things, Secret Click, and Fortune Teller Potato; added styling refinements.
+- **Neil Oommen Renni:** Lead development, component structuring, implemented Endless Scroll and Rate My Air features.
+- **Mahadevan Reji:** Created Pointless Progress Bars and Philosophical Cat components, assisted with styling.
+- **Malavika GK:** Designed History of Invisible Things, Secret Click, and Fortune Teller Potato; added styling refinements.
 
 Made with ❤️ at TinkerHub Useless Projects
 

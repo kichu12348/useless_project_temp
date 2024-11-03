@@ -1,4 +1,4 @@
-# Bananas 🎯
+# Pineabble 🎯
 
 ## Basic Details
 
@@ -28,7 +28,7 @@ We’re here to lighten your existential load with a medley of pointless yet odd
 **For Software:**
 - **Languages used:** JavaScript, HTML, CSS
 - **Frameworks used:** React, Express (for backend)
-- **Libraries used:** esbuild (for bundling), styled-components (for styling)
+- **Libraries used:** rollup (for bundling), .module.css(for styling)
 - **Tools used:** Node.js, Git
 
 **For Hardware:**
@@ -61,11 +61,29 @@ npm start
 - Pointless Progress Bars with a bar that fills up halfway before reversing, offering zero closure.
 
 ### Diagrams
+```mermaid
+graph TD;
+    A[User] -->|Visits website| B[Homepage]
+    B -->|Clicks on feature| C[Endless Scroll]
+    B -->|Clicks on feature| D[Philosophical Cat]
+    B -->|Clicks on feature| E[Pointless Progress Bars]
+    C --> F[Infinite scrolling content]
+    D --> G[Random philosophical insights]
+    E --> H[Progress bar animation]
+```
 
-- A simple workflow demonstrating the client-server interaction for different pointless features.
+### Additional Screenshots
 
-**For Hardware:**
-- Not applicable.
+- **Home Page:** ![Home Page](screenShots/home.png)
+- **Endless Scroll:** ![Endless Scroll](screenShots/endless.png)
+- **Philosophical Cat:** ![Philosophical Cat](screenShots/philocat.png)
+- **Pointless Progress Bars:** ![Pointless Progress Bars](screenShots/pointlessProg.png)
+- **Secret Treasure:** ![Secret Treasure](screenShots/secretTre.png)
+- **History of Invisible Things:** ![History of Invisible Things](screenShots/invi.png)
+- **The Fortune Teller Potato:** ![The Fortune Teller Potato](screenShots/potato.png)
+- **Rate My Air:** ![Rate My Air](screenShots/rateAir.png)
+- **Stacking Paper Clips:** ![Stacking Paper Clips](screenShots/clips.png)
+- **Baking Air:** ![Baking Air](screenShots/bake.png)
 
 ## Project Demo
 

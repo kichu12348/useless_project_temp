@@ -41,8 +41,8 @@ We’re here to lighten your existential load with a medley of pointless yet odd
 #### Installation
 
 ```bash
-git clone https://github.com/username/bananas.git
-cd bananas
+git clone https://github.com/kichu12348/useless_project_temp.git
+cd useless_project_temp
 npm install
 ```
 
@@ -104,8 +104,8 @@ graph TD;
 
 ### Additional Demos
 
-- [Endless Scroll demo link](#)
-- [Philosophical Cat demo link](#)
+- [Endless Scroll demo link](https://kichu12348.github.io/baananaa/endless-scroll)
+- [Philosophical Cat demo link](https://kichu12348.github.io/baananaa/philosophical-cat)
 
 ## Team Contributions
 

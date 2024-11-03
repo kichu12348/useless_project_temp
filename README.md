@@ -67,9 +67,21 @@ graph TD;
     B -->|Clicks on feature| C[Endless Scroll]
     B -->|Clicks on feature| D[Philosophical Cat]
     B -->|Clicks on feature| E[Pointless Progress Bars]
+    B -->|Clicks on feature| I[Invisible Museum]
+    B -->|Clicks on feature| J[Secret Treasure]
+    B -->|Clicks on feature| K[Fortune Teller Potato]
+    B -->|Clicks on feature| L[Rate My Air]
+    B -->|Clicks on feature| M[Stacking Paper Clips]
+    B -->|Clicks on feature| N[Baking Air]
     C --> F[Infinite scrolling content]
     D --> G[Random philosophical insights]
     E --> H[Progress bar animation]
+    I --> O[Invisible artifacts display]
+    J --> P[Hidden treasures reveal]
+    K --> Q[Potato fortune telling]
+    L --> R[Air quality rating]
+    M --> S[Paper clips stacking game]
+    N --> T[Air baking simulation]
 ```
 
 ### Additional Screenshots

@@ -1,5 +1,7 @@
 # Pineabble 🎯
 
+[Visit the website](https://kichu12348.github.io/baananaa)
+
 ## Basic Details
 
 ### Team Name: Gryffindor
